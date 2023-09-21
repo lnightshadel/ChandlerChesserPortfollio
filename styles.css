@@ -33,10 +33,7 @@ body {
   --clr-fg-alt: #444;
   --clr-primary: #2978b5;
   --shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-image:url(Images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
+ 
 }
 
 .dark {
