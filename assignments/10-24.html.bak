@@ -1,0 +1,50 @@
+<html>
+<head>
+	<title>10-24</title>
+	<link href="10-24.css" rel="stylesheet">
+</head>
+<body>
+<nav>
+	<ul>
+		<li><a href="10-24.html">Home</a></li>
+		<li>Multimedia
+			<ul>
+				<li><a href="10.24.html#audio">Audio</a></li>
+				<li><a href="10.24.html#video">Video</a></li>
+				<li><a href="10.24.html#image">Image</a></li>
+				<li><a href="10.24.html#animations">Animations</a></li>
+			</ul>
+			<li><a href="10-24gallery.html">Gallery</a></li>
+	</ul>
+</nav>
+<main>
+<h2 id="audio">My favorite music</h2>
+<audio controls="controls">
+<source src="../Images/Kalimba.mp3" type="audo/mpeg">
+</audio><br>
+Download the <a href="../Images/Kalimba.mp3"> music</a>
+<h2 id="video">My favorite dog</h2>
+<video controls="controls">
+<source src="../Images/sparky.m4v" type="video/mp4">
+<source src="../Images/sparky.mov" type="video/mov">
+</video><br>
+Download the <a href="../Images/sparky.m4v"> video (m4v)</a><br>
+Download the <a href="../Images/sparky.mov"> video (mov)</a><br>
+
+<h2 id="image">My favorite cat</h2>
+<img src ="../Images/cat.jpg">
+
+<h2 id="animations">My favorite animation</h2>
+<div id="div1">Hello</div><br>
+<div id="div2"></div><br>
+<div id="div3"></div><br>
+<div id="div4"></div><br>
+<div id="div5"></div><br>
+<div id="div6">Hi, there ...</div><br>
+<div id="div7"></div><br>
+<div id="div8"></div><br>
+<div id="div9">Hello</div><br>
+</main>
+</body>
+</html>
+

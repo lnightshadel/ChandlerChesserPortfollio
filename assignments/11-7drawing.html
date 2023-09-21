@@ -1,0 +1,67 @@
+<html>
+<head>
+	<title>11-7 Drawing</title>
+</head>
+
+<body>
+<canvas id = "myCanvas" width = "200" height = "600" style = "border: 1px solid #000000;"></canvas>
+<script>
+var canv = document.getElementById("myCanvas");
+var ctx = canv.getContext("2d");
+
+//draw a square
+ctx.fillStyle = "#ff0000";
+//fillRect (x0, y0, width, height)
+ctx.fillRect(100,0,100,100);
+
+//draw a line
+ctx.moveTo(120, 20);
+ctx.lineTo(180, 50);
+ctx.stroke();
+
+
+ctx.moveTo(180, 20);
+ctx.lineTo(120, 50);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(150, 50, 30, 0.25*Math.PI, 0.75*Math.PI);
+ctx.stroke();
+
+ctx.beginPath();
+ctx.arc(0, 0, 50, 0, Math.PI);
+ctx.fillStyle = "yellow";
+ctx.fill();
+
+var grd = ctx.createLinearGradient(0,120,200,120);
+grd.addColorStop(0,"red");
+grd.addColorStop(0.5,"purple");
+grd.addColorStop(0.75,"pink");
+grd.addColorStop(1,"yellow");
+ctx.fillStyle = grd;
+ctx.fillRect(0,120,200,100);
+
+var grd1 = ctx.createLinearGradient(0,240,0,340);
+grd1.addColorStop(0,"red");
+grd1.addColorStop(0.5,"purple");
+grd1.addColorStop(0.75,"pink");
+grd1.addColorStop(1,"yellow");
+ctx.fillStyle = grd1;
+ctx.fillRect(0,240,200,100);
+
+var grd2 = ctx.createRadialGradient(100, 410, 5, 100, 410, 30);
+grd2.addColorStop(0, "red");
+grd2.addColorStop(1, "white");
+ctx.fillStyle = grd2;
+ctx.fillRect(0,360,200,100);
+
+ctx.font = "30px Arial";
+ctx.fillStyle = "red";
+ctx.fillText("Hello World", 10, 500);
+ctx.strokeStyle = grd;
+ctx.strokeText("Hello World", 10, 540); 
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,208 @@
+<html>
+<head>
+	<title>Lab 4</title>
+	<style>
+	h3 { color: #0066FF;
+	}
+	#gender {
+	
+	width:220px;
+	}
+	label {
+	font-weight: bold;
+	
+	}
+	#age, #school {
+	width:230px;
+	
+	}
+	#level {
+	width:220px;
+	}
+	input[type=number]::-webkit-inner-spin-button {
+    opacity: 1
+	}
+	#c1 {
+	text-align:right;
+	}
+	#space {
+	padding 15px;
+	}
+	#t1 {
+	width:500px;
+	}
+	#t2{
+	width:1000px;
+	}
+	#cen{
+	text-align:center;
+	}
+	.altrow {
+	background-color: #eaeaea;
+	}
+
+	</style>
+</head>
+<body>
+	<h1>Information Security Awareness Survey</h1>
+	<form method = "post" action = "lab4.php">
+	<h3>1. Demographic Information</h4>
+	<table>
+	<tr>
+	<th>
+	<label for="gender" id="gender">Gender:</label>
+	</th>
+	<td>
+		<select id ="gender" name = "gender" size = "1" class="altrow">
+			<option value = "male">Male</option>
+			<option value = "female">Female</option>
+			<option value = "none">Do not Want To Tell</option>
+		</select>
+	</td>
+	</tr>
+	<tr>
+	<th id="c1">
+	<label for="age">Age:</label>
+	</th>
+	<td>
+	<input id="age" type="number" min="0" max="100" name="age">
+	</td>
+	</tr>
+
+	<tr>
+	<th id="c1">
+	<label for="level">Level:</label>
+	</th>
+	<td>
+	<select id ="level" name = "level" size = "1" class="altrow">
+	<option>Choose your level at GGC</option>
+	<option value = "Freshmen">Freshmen</option>
+	<option value = "Sophmore">Sophomore</option>
+	<option value = "Junior">Junior</option>
+	<option value = "Senior">Senior</option>
+	</select>
+	</td>
+	</tr>
+	<tr>
+	<th id="c1">
+	<label for="school">School:</label>
+	</th>
+	<td>
+	<input id="school" name="school" type="text" list="schools"><br>
+	<datalist id ="schools">
+		<option  value="SST">
+		<option label="SB" value="SB">
+		<option label="SE" value="SE">
+		<option label="SLA" value="SLA">
+		</datalist>
+	</td>
+	</tr>
+	</table>
+	<h3>2. How do you evaluate your security knowledge?</h3>
+	Choose a score between 1 and 100:<br>
+	1<input type="range" name="sat" min="1" max="100">100
+	<h3>3. Have your computers been infected by a virus before?</h3>
+	<input type="radio" id="yes" name="yes" value="yes"><label for="yes">Yes</label>
+	<input type="radio" id="no" name="no" value="no"><label for="no">No</label>
+	<h3>4. What anti-virus software do you usually use (you can pick more than one answers)?</h3>
+	<table id="t1">
+	<tr>
+	<td>
+	<input id ="norton" type="checkbox">
+	<label for ="norton">Norton</label>
+	</td>
+	<td>
+	<input id ="mcafee" type="checkbox">
+	<label for ="mcafee">McAfee</label>
+	</td>
+	<td>
+	<input id ="kasperski" type="checkbox">
+	<label for ="kasperski">Kasperski</label>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<input id ="avg" type="checkbox">
+	<label for ="avg">AVG</label>
+	</td>
+	<td>
+	<input id ="malwarebytes" type="checkbox">
+	<label for ="malwarebytes">Malwarebytes</label>
+	</td>
+	<td>
+	<input id ="avast" type="checkbox">
+	<label for ="avast">Avast</label>
+	</td>
+	</tr>
+	<tr>
+	<td>
+	<input id ="bitdefender" type="checkbox">
+	<label for ="bitdefender">Bitdefender</label>
+	</td>
+	<td>
+	<input id ="trendmicro" type="checkbox">
+	<label for ="trendmicro">Trend Micro</label>
+	</td>
+	<td>
+	<input id ="webroot" type="checkbox">
+	<label for ="webroot">Webroot</label>
+	</td>
+	</tr>
+	</table>
+	<h3>5. Please rate the following questions from strongly disagree to strongly agree:</h3>
+	<table id="t2">
+	<tr>
+	<td id="cen" class="altrow">Questions</td>
+	<td id="cen" class="altrow">Strongly Disagree</td>
+	<td id="cen" class="altrow">Disagree</td>
+	<td id="cen" class="altrow">Neutral</td>
+	<td id="cen" class="altrow">Agree</td>
+	<td id="cen" class="altrow">Strongly Agree</td>
+	</tr>
+	<tr>
+	<td><label for="q1">I know how to create a strong password</label></td>
+	<td id="cen"><input type="radio" id="q1sd" name="q1" value="Strongly Disagree"></td>
+	<td id="cen"><input type="radio" id="q1d" name="q1" value="Disagree"></td>
+	<td id="cen"><input type="radio" id="q1n" name="q1" value="Neutral"></td>
+	<td id="cen"><input type="radio" id="q1a" name="q1" value="Agree"></td>
+	<td id="cen"><input type="radio" id="q1sa" name="q1" value="Strongly Agree"></td>
+	</tr>
+	<tr>
+	<td class="altrow"><label for="q2">I know how to remove viruses from my computer</label></td>
+	<td id="cen" class="altrow"><input type="radio" id="q2sd" name="q2" value="Strongly Disagree"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q2d" name="q2" value="Disagree"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q2n" name="q2" value="Neutral"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q2a" name="q2" value="Agree"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q2sa" name="q2" value="Strongly Agree"></td>
+	</tr>
+	<tr>
+	<td><label for="q3">I know how to remove spyware from my computer</label></td>
+	<td id="cen"><input type="radio" id="q3sd" name="q3" value="Strongly Disagree"></td>
+	<td id="cen"><input type="radio" id="q3d" name="q3" value="Disagree"></td>
+	<td id="cen"><input type="radio" id="q3n" name="q3" value="Neutral"></td>
+	<td id="cen"><input type="radio" id="q3a" name="q3" value="Agree"></td>
+	<td id="cen"><input type="radio" id="q3sa" name="q3" value="Strongly Agree"></td>
+	</tr>
+	<tr>
+	<td class="altrow"><label for="q4">I know how to secure my wireless network at home</label></td>
+	<td id="cen" class="altrow"><input type="radio" id="q4sd" name="q4" value="Strongly Disagree"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q4d" name="q4" value="Disagree"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q4n" name="q4" value="Neutral"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q4a" name="q4" value="Agree"></td>
+	<td id="cen" class="altrow"><input type="radio" id="q4sa" name="q4" value="Strongly Agree"></td>
+	</tr>
+	<tr>
+	<td><label for="q5">I know how to protect my personal information when surfing the internet</label></td>
+	<td id="cen"><input type="radio" id="q5sd" name="q5" value="Strongly Disagree"></td>
+	<td id="cen"><input type="radio" id="q5d" name="q5" value="Disagree"></td>
+	<td id="cen"><input type="radio" id="q5n" name="q5" value="Neutral"></td>
+	<td id="cen"><input type="radio" id="q5a" name="q5" value="Agree"></td>
+	<td id="cen"><input type="radio" id="q5sa" name="q5" value="Strongly Agree"></td>
+	</tr>
+	</table>
+	<br>
+<input type="submit" value="Submit" class="alt">
+<input type="reset">
+</form>
+</body>
+</html>

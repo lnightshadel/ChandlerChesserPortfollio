@@ -1,0 +1,22 @@
+<?php
+	echo "<html><head><title>lab4.php</title></head><body>";
+	echo "<h1>Thank you for taking the survey</h1>";
+	echo "<h2>Below are your answers to the survey questions:</h2>";
+	echo "<h1>1. Demographic Information:</h1>";
+	echo "Your gender:" . $_POST["gender"] . "<br>";
+	echo "Your age:" . $_POST["age"] . "<br>";
+	echo "Your level:" . $_POST["level"] . "<br>";
+	echo "Your School:" . $_POST["school"] . "<br>";
+	echo "<h1>2. How do you evaluate your security knowledge:</h1>";
+	echo "You chose:" . $_POST["sat"] . "<br>";
+	echo "<h1>3. Have your computers been afected by virus before:</h1>";
+
+	if (isset($_POST["yes"]) && $_POST["yes"] =="yes") {
+	echo "You responded: Yes"}
+	if (isset($_POST["no"]) && $_POST["no"] =="no") {
+	echo "You responded: No"}
+	
+	
+	
+	echo "</body></html>";
+	?>

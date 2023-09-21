@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>11-7</title>
+	<style>
+	#spring {display:none;}
+	
+	#flip {
+	
+	width:600px; 
+	text-align:center; 
+	font-weight:bold; 
+	background-color:yellow;
+	border: 1px solid #c3c3c3; 
+	display:none; }
+	#div1 {width:100px; height:100px; background-color:red; display:none;}
+	img {width:100%; height:100%; }
+	#div2 {width: 200px; 
+			height:100px;
+			background-color: orange;
+			color: white;
+			text-align: center;
+			position: absolute;
+			}
+	</style>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://www.w3schools.com/lib/w3.js"></script>
+	<script>
+	$(document).ready(function(){
+	alert("Ready for jQuery");
+	
+	$("#more").click(function(){
+		$("#spring").fadeToggle(1000);
+		});
+	$("#more2").click(function(){
+		$("#summer").fadeToggle(1000);
+		});
+			$("#hide").click(function(){
+		$("#prgs").hide();
+		});
+		$("#show").click(function(){
+		$("#prgs").show();
+		});
+		$("#hideshow").click(function(){
+		$("#prgs").toggle();
+		});
+		$("#flip").click(function(){
+		$("#panel").slideToggle();
+		});
+		$("#fadein").click(function(){
+		$("#div1").fadeIn();
+		});
+		$("#fadeout").click(function(){
+		$("#div1").fadeOut();
+		});
+		$("#changecolor").click(function(){
+		$("#div1").css("background-color", "yellow");
+		});
+		$("#animation").click(function(){
+		$("#div2").animate({left: "200px"}, "slow");
+		$("#div2").animate({height: "200px", opacity:"0.4"}, "slow");
+		$("#div2").animate({width: "300px", opacity:"0.8"}, "slow");
+		$("#div2").animate({textSize: "3em", opacity:"1"}, "slow");
+		
+		$("#div2").animate({left: "5px"}, "slow");
+		$("#div2").animate({height: "100px", opacity:"0.8"}, "slow");
+		$("#div2").animate({width: "200px", opacity:"0.4"}, "slow");
+		$("#div2").animate({textSize: "3em", opacity:"1"}, "slow");
+		});
+		
+	});
+	</script>
+</head>
+<body>
+<h1>Seasons</h1>
+<div id = "prgs">
+<p>My favorite season in a year is autumn.
+<a href="#" id = "more">More</a></p>
+<p id ="spring">I also like spring.
+<a id="more2" href="#">More</a></p>
+<p id="summer">And summer, too.</p>
+</div>
+<button id = "hide">Hide</button>
+<button id = "show">Show</button>
+<button id = "hideshow">Hide/Show</button>
+<br><br>
+<div id="flip">Click to slide the panel down or up</div>
+<div id = "panel">
+<img class = "autumn" src = "../Images/autumn1.jpg">
+<img class = "autumn" src = "../Images/autumn2.jpg">
+<img class = "autumn" src = "../Images/autumn3.jpg">
+</div>
+<script>
+w3.slideshow(".autumn", 2000);
+</script>
+<br><br>
+<div id="div1"></div><br>
+<button id = "fadein">Fade In</button>
+<button id = "changecolor">Change Color</button>
+<button id = "fadeout">Fade Out</button>
+<br><br>
+<button id = "animation">Start Animation</button>
+<br><br>
+<div id="div2"><a href="11-7drawing.html">Have fun!</a></div>
+</body>
+</html>

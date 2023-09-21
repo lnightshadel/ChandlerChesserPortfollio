@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>Project 3</title>
+		<link href="project3.css" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+	<nav>
+		<div class="drop">
+			<button class="btn">Menu</button>
+				<div class="content">
+					<a href="10-24.html">Home</a>
+					<a href="#description" id="description">Movie Description</a>
+					<a href="#info">Movie Info</a>
+					<a href="#review">Review</a>
+					<a href="#poster">Poster</a>
+					<a href="#video">Trailer</a>
+					<a href="#audio">Audio</a>
+					<a href="project3gallery.html">Gallery</a>
+					</div>
+				</div>
+		
+		
+	</nav>
+	
+	<main class="center">
+		<div id="description">
+			<h1>Movie Description</h1>
+			<h2>Alien vs. Predator (stylized as AVP: Alien vs. Predator) is a 2004 science fiction action film written and directed by Paul W. S. Anderson, and starring Sanaa Lathan, Raoul Bova, Lance Henriksen, Ewen Bremner, Colin Salmon, and Tommy Flanagan. It is the first film installment of the Alien vs. Predator franchise, adapting a crossover bringing together the eponymous creatures of the Alien and Predator series, a concept which originated in a 1989 comic book written by Randy Stradley and Chris Warner. Anderson wrote the story, with the creators of the Alien franchise, Dan O'Bannon and Ronald Shusett receiving additional story credit due to incorporation of elements from the Alien series, and Anderson and Shane Salerno adapted the story into a screenplay. Their writing was influenced by Aztec mythology, the comic book series, and the writings of Erich von Däniken. In the film, scientists are caught in the crossfire of an ancient battle between Aliens and Predators as they attempt to escape a bygone pyramid.</h2>
+		</div>
+		<div id="info">
+		<h1>Movie Info</h1>
+		<h2>Published: 12 August 2004<br>
+			Director:Paul W. S. Anderson<br>
+			Stars:Sanna Lathan| Raoul Bova| Lance Henriksen| Ewen Bremner| Colin Salmon| Tommy Flanagan|</h2>
+		</div>
+		<div id="review">
+		<h1>Review</h1>
+		<h2>My overall rating of the movie is a 8/10. While it is my favorite movie of all times due to its age it has short comings in visiual and audio fidelity, however the action sequences and overall story plot are very intresting
+		and was the first taste of the Aliens vs Predators universe for me which sparked decades of fandom. The acting is quite good for the main actors, and the VFX/SFX are realistic and practical enough for its time that I am able to still rewatch it and enjot it many times. Especially in comparison to its sequeals which did not hold up in terms of quality</h2>
+		</div>
+		<div id="poster">
+		<h1>Poster</h1>
+		<h1 id="door"></h2>
+		</div>
+		<div id="audio">
+		<h1>Audio</h1>
+		<audio controls="controls" style="padding:20px;">
+<source src="../Images/avp.mp3" type="audio/mp3">
+</audio><br>
+		</div>
+		
+	</main>
+	<div id="video">
+	<h1 style="text-align:center; color:white;">Trailer</h1>
+	<video controls="controls">
+		<source src="../Images/avp.mp4" type="video/mp4">
+		</video><br>
+	</div>
+	
+	</body>
+	
+	</html>

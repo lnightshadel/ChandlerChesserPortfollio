@@ -1,0 +1,79 @@
+<html>
+
+<head>
+
+<title>10-31</title>
+
+</head>
+
+<body>
+<button onclick="yesButton()">Yes</button>
+<button onclick="noButton()">No</button>
+<script>
+function noButton(){
+alert("You clicked no");
+}
+function yesButton() {
+alert("you clicked yes");
+}
+</script>
+<h2>Happy Halloween</h2>
+<img id="myImage" src="../Images/trickOrTreat.jpg" style="width:300px; height:150px;">
+<br><br>
+<button onclick = "document.getElementById('myImage').src='../Images/trick.jpg'">Treat</button>
+<button onclick = "document.getElementById('myImage').src='../Images/treat.jpg'">Trick</button>
+
+<h2>Handle Events</h2>
+<p>Do you know Java Programming?
+<a href="#" onmouseover = "alert('Yes!')">(mouse over to see answer</a></p>
+<p>Do you know JavaScript Programming? <a href="#" onmouseout = "alert('Start learning it!')">(mouse out to see answer)</a></p>
+<img onmouseover = "bigImg(this)" onmouseout = "normalImg(this)" src = "../Images/tryJavaScript.jpg">
+
+<script>
+function bigImg(image) {
+image.style.width = "440px";
+image.style.height = "520px";
+image.style.transition = "width 2s, height 2s";
+}
+</script>
+<script>
+function normalImg(image) {
+image.style.width = "220px";
+image.style.height = "260px";
+image.style.transition = "width 2s, height 4s";
+}
+</script>
+
+<h2 onmouseover = "changeColor(this, 'red')" onmouseout="changeColor(this, 'green')">JavaScript is easy!</h2>
+<script>
+function changeColor(text, newcolor) {
+text.style.color = newcolor;
+}
+</script>
+
+<h2>Variables</h2>
+<script>
+var userName; userName = prompt ("Please enter your name:");
+var userColor;
+userColor = prompt(userName + ", do you like red, blue or any other color as background color?");
+document.bgColor = userColor;
+userColor = prompt(userName + ", do you like red, blue or any other color as background color?");
+document.fgColor = userColor;
+</script>
+<h2>Selection</h2>
+<script>
+var score;
+score = prompt(userName + ", please enter your score");
+if (score >= 90) {
+document.write("<h3>" + userName + ", you got an A!");
+else 
+document.write("<h3>" + userName + ", you got below A.");
+}
+</script>
+<h3>This page was last modified on: 
+<script>
+document.write(document.lastModified);
+</script>
+</body>
+
+</html>

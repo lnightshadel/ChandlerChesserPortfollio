@@ -1,0 +1,134 @@
+<html>
+<head>
+	<title>10-10</title>
+	<style>
+	th {
+	text-align:right;
+	}
+	fieldset {width: 400px;
+				border:2px ridge #eaeaea;
+				padding:10px;
+				}
+	legend { font-weight: bold;}
+	</style>
+</head>
+<body>
+<h1>IT Student Club Registration</h1>
+<p>Required fields are marked with an asterisk (*)</p>
+<form method = "post" action = "10-17.php">
+<fieldset>
+<legend>Personal Information</legend>
+<table>
+<tr>
+	<th><label for = "sid">*Student ID:</label></th>
+	<td><input id = "sid" name="sid" type = "text" placeholder = "E.g. 9000xxxxxxxx" required="required"><br></td>
+</tr>
+<tr>
+	<th><label for = "pswd">*Password:</label></th>
+	<td><input id = "pswd" name="pswd" type = "password" required="required"></td><br>
+</tr>
+<tr>
+	<th><label for = "rpswd">*Retype Password:</label></th>
+	<td><input id = "rpswd" name = "rpswd" type = "password" required="required"><br></td>
+</tr>
+<tr>
+	<th><label for = "eml">*Email:</label></th>
+	<td><input id = "eml" name = "eml" type = "email" required="required"><br></td>
+</tr>
+<tr>
+<th><label for="lv">Level:</label></th>
+<td>
+	<select id ="lv" name = "lv" size = "1">
+	<option>Choose your level at GGC</option>
+	<option value = "Freshmen">Freshmen</option>
+	<option value = "Sophmore">Sophomore</option>
+	<option value = "Junior">Junior</option>
+	<option value = "Senior">Senior</option>
+	</select>
+</td>
+</tr>
+	
+</table>
+</fieldset>
+<br>
+<fieldset>
+<legend>IT Preferences </legend>
+<input id ="ocpt" type="checkbox">
+<label for ="ocpt">I Own A Computer.</label>
+<br><br>
+How Long do you use a computer a day?<br>
+<input id ="t1" type = "radio" name ="time">
+<label for ="t1">0-2 hours</label><br>
+<input id="t2" type="radio" name="time">
+<label for ="t2">2-5 Hours</label><br>
+<input id ="t3" type="radio" name="time">
+<label for = "t3">5+ hours </label><br>
+<br>
+What is your favorite web browser (you can select more than one answer)?<br>
+<input id ="b1" type="checkbox">
+<label for ="b1">Edge</label><br>
+<input id ="b2" type="checkbox">
+<label for ="b2">Firefox</label><br>
+<input id ="b3" type="checkbox">
+<label for ="b3">Chrome</label><br>
+<input id ="b4" type="checkbox">
+<label for ="b4">Safari</label>
+<br>
+What is your major concentration?<br>
+<select name = "major" size ="5">
+<option value="DM">DM</option>
+<option value="SD">SD</option>
+<option value="SS">SS</option>
+<option value="ES">ES</option>
+<option value="DA">DA</option>
+</select>
+</fieldset>
+<br>
+<fieldset>
+<legend>Other Preferences</legend>
+<label for="website">Your favorite website:</label>
+<input id="website" type="url"><br>
+<br>
+<label for="fcolor">Your Favorite color:</label>
+<input id="fcolor" name="fcolor" type="text" list="colorList"><br>
+<datalist id ="colorList">
+<option label="red" value="red">
+<option label="green" value="green">
+<option label="blue" value="blue">
+<option label="yellow" value="yellow">
+</datalist>
+<br>
+<label for="1color">Your least favorite color:</label>
+<input id="1color" name="1color" type="color"><br>
+<br>
+<label for="1number">Your lucky number:</label>
+<input id="1number" type="number" min="0" max="10"><br>
+<br>
+<label for ="fdate">Your favorite date:</label>
+<input id="fdate" type="date"><br>
+<br>
+Your height:<br>
+<input id ="feet" type="number" min="0" max="8" value="5">feet
+<input id ="inches" type="number" min="0" max="11" value="6" oninput ="meters.value = parseInt(feet.value)*0.3 + parseInt(inches.value)*0.025">Inches 
+=<output name="meters" for = "feet inches"></output>meters<br>
+</fieldset>
+<h3>Your opinion about classes:</h3>
+<table border="1">
+<tr>
+	<td>I like classes starting at 8am.</td>
+	<td><input type="radio" id="q1agree" name="morning" value="agree"><label for="q1agree">Agree</label></td>
+	<td><input type="radio" id="q1neutral" name="morning" value="neutral"><label for="q1neutral">Neutral</label></td>
+	<td><input type="radio" id="disagree" name="morning" value="disagree"><label for="disagree">Disagree</label></td>
+</tr>
+<tr>
+	<td>I like evening classes.</td>
+	<td><input type="radio" id="q2agree" name="evening" value="agree"><label for="q2agree">Agree</label>
+	<td><input type="radio" id="q2neutral" name="evening" value="neutral"><label for="q2neutral">Neutral</label></td>
+	<td><input type="radio" id="q2disagree" name="evening" value="disagree"><label for="q2disagree">disagree</label></td>
+</table>
+<br><br>
+<input type="submit" value="Register">
+<input type="reset">
+</form>
+</body>
+</html>

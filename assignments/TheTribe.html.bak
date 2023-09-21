@@ -1,0 +1,34 @@
+<html>
+	<head>
+		<title>The Tribe</title>
+		<link href="tribe.css" rel="stylesheet">
+	</head>
+	
+	<body>
+	
+	<nav>
+		<ul>
+			<li><a href="TheTribe.html">Home</a></li>
+			<li><a href="store.html">Store</a></li>
+		</ul>
+	</nav>
+	<main>
+	<h1>WELCOME TO THE TRIBE!</h1>
+	<div id="youtube"><a href="https://www.twitch.tv/subs/atlxmatrix"><img src="youtube.png"></a></div>
+	<div id="discord"><a href="https://discord.gg/dWNZtvjtxA"><img src="discord.png"></a></div>
+	<div id="tiktok"><a href="https://www.tiktok.com/@atlxmatrix?from=sw&lang=en"><img src="tiktok.png"></a></div>
+	<div id="twitter"><a href="https://twitter.com/atlxmatrix" title="twitter"</a></div>
+	
+	
+	<div id="bio">
+	<img src="face.png">
+	<h2>BIO</h2>
+	<p>My name is Christian. I have been playing video games since I was a youngling. I started on atari with games like Pitfall and Space Invaders. My passion for games kicked into high gear with the N64.</p>
+	<p>How could you not get hooked with games like Golden Eye, Smash Bros, and Star Fox?!</p>
+	<p>Fast Forward to today, I get hooked on al kinds of games that catch my interest. We will not speak to how many hours I have logged into Destiny 2, Skyrim, Fallout4, or Call Of Duty</p>
+	<p>After all this time, my most memorable experiences came from Legends of The Dragon, FFVIII, and Assasin's Creed 2. And no... I don't have a tattoo for one of these games... OR DO I?</p>
+	</div>
+	</main>
+	
+	</body>
+	</html>
