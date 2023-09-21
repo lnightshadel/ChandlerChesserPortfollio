@@ -24,14 +24,10 @@ body {
   line-height: 1.5;
   color: var(--clr-fg);
   background-color: var(--clr-bg);
-  background-image:url(Images/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 
 .light {
-  --clr-bg: #fcfcfc;
+  --clr-bg: #C0C0C0; /*#fcfcfc;*/
   --clr-bg-alt: #fff;
   --clr-fg: #555;
   --clr-fg-alt: #444;
