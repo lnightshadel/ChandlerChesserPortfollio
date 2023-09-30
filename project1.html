@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>SIEM Project</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+      <h3>
+        <a href="file:///C:/Users/night/Desktop/school%20old/portfolioSite/IndexPort.html" class="link"
+          >CC</a
+        >
+      </h3>
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+	  
+        <h1><span class="about__name">SIEM Project/HomeLab</span></h1>
+		
+        <h2 class="about__role">Project Overview</h2>
+		<p style="text-align:center;">My goal was to understand the nature of cyber attacks by intentionally exposing the VM to the public,<br> thereby inviting potential attackers. Here's a detailed breakdown of my experiment:</p>
+		<br>
+		<h3> Setting Up the Azure Virtual Machine: </h3>
+        <p class="about__desc">
+          I initiated the experiment by creating a virtual machine on Microsoft Azure with a focus on low expense and system resource managment to acheive what I needed without incuring additional cost. 
+		  <br><br>This VM served as the target for real cyber attacks in a controled and contained enviornment to simulate actual attacks.
+		  I deliberately disabled the system's firewall, leaving its ports exposed to the public internet. This allowed for port scanning by potential attackers, simulating real-world cybersecurity threats via attempts to remote connect to the system.
+		  <br><br>This attack showcases the power and persistence of brute-force attacking on a global scale with thousands of attempts from multiple countries automating their attacks until they gain connection. 
+        </p>
+
+
+       
+
+          
+        </div>
+      </div>
+
+			<!-- Project Content -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Project ShowCase</h2>
+
+        <div class="projects__gridrow">
+           <div class="project"> <a href="Images\SIEMGraph.PNG">
+		  
+            <h3>Event Graph</h3>
+			
+            <img style="width:100%; height:80%;" src="Images\SIEMGraph.PNG">
+			
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+            </a>
+          </div> 
+			<!-- Project Content -->
+          <div class="project">
+		  
+            <a href="Images\map1.PNG">
+		  
+            <h3>Attack Locations Mapped Day 1</h3>
+			
+            <img style="width:100%; height:80%;" src="Images\map1.PNG">
+			
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+            </a>
+          </div>
+
+          <div class="project">
+		  
+           <a href="Images\powershellcode.PNG">
+		  
+            <h3>PowerShell Script</h3>
+			
+            <img style="width:100%; height:80%;" src="Images\powershellcode.png">
+			
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+			<a
+              href="https://github.com/lnightshadel/ChandlerChesserPortfollio/blob/main/PowerShell_Script_EventLogs.txt"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+			
+          </div>
+		  
+		  <div class="project">
+		  
+            <a href="Images\log.PNG">
+		  
+            <h3>Log Analytics</h3>
+			
+            <img style="width:100%; height:80%;" src="Images\log.png">
+			
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+			</a>
+          </div>
+		  
+		  <div class="project">
+		  
+		  
+            <h3>Sentinel Workbook</h3>
+			
+            <p>"version": "Notebook/1.0",</p>
+			<p>Query Code (Extracts Raw Data from Log Analytics):</p>
+			<br>
+			<p style="border-style:inset; background-color:rgba(0,0,0,.5);">"query": "FailedLogsGeo_CL | extend username = extract(@\"username:([^,]+)\", 1, RawData),\r\n         timestamp = extract(@\"timestamp:([^,]+)\", 1, RawData),\r\n         latitude = extract(@\"latitude:([^,]+)\", 1, RawData),\r\n         longitude = extract(@\"longitude:([^,]+)\", 1, RawData),\r\n         sourcehost = extract(@\"sourcehost:([^,]+)\", 1, RawData),\r\n         state = extract(@\"state:([^,]+)\", 1, RawData),\r\n         label = extract(@\"label:([^,]+)\", 1, RawData),\r\n         destination = extract(@\"destinationhost:([^,]+)\", 1, RawData),\r\n         country = extract(@\"country:([^,]+)\", 1, RawData)\r\n| where destination != \"samplehost\"\r\n| where sourcehost != \"\"\r\n| summarize event_count=count() by latitude, longitude, sourcehost, label, destination, country",</p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+			
+          </div>
+		  
+		  <div class="project"><a href="webprojects.html">
+		  
+            <h3>Video Walkthrough</h3>
+			
+            <p class="project__description">
+              Table and Page Layouts <br>
+			  Registration Forms <br>
+			  Various Animation Concepts <br>
+			  User Prompted Dynamic Style Concepts <br>
+			  Example Transcript Chart <br>
+			  Survey Concept Examples <br>
+            </p>
+			
+            <ul class="project__stack">
+              <li class="project__stack-item">SASS</li>
+              <li class="project__stack-item">TypeScript</li>
+              <li class="project__stack-item">React</li>
+            </ul>
+
+            <a
+              href="https://github.com"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </a></div>
+		  
+        </div>
+      </section>
+
+      
+    </main>
+
+    <footer class="footer">
+      <a
+        href="https://github.com/lnightshadel/ChandlerChesserPortfollio"
+        class="link footer__link"
+      >
+      </a>
+    </footer>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
